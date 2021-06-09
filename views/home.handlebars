@@ -1,0 +1,25 @@
+<section id='home-section'>
+  <h2>{{ comic.title }}</h2>
+
+</section>
+
+Title: {{ comic.title }} <br>
+<img src={{ comic.img }} alt={{ comic.alt }}> <br>
+Month: {{ comic.month }} <br>
+Day: {{ comic.day }} <br>
+ID: {{ comic.num }} <br>
+Date: {{ comic.month }} / {{ comic.day }} /{{ comic.year }}
+<br>
+<a href="/id/{{ minus comic.num 1 }}">
+  <button type="submit">Back</button>
+</a>
+<br>
+<a href="/id/{{ random 1 2473 }}">
+  <button type="submit">Random</button>
+</a>
+<br>
+<a href="/id/{{ add comic.num 1 }}">
+  <button type="submit">Next</button>
+</a>
+
+
