@@ -1,21 +1,15 @@
-const express = require("express");  // Import module
+const express = require("express");  // Import modules
 const exphbs  = require('express-handlebars');
 const generalController = require('./controllers/GeneralController')
 const helpers = require('handlebars-helpers')();
+const port = 3000;
 
-const app = express(); // Call as constructor to create Express App Object
+const app = express(); 
 
-// Config express to use handlebars as template engine
-app.engine('handlebars', exphbs());
+app.engine('handlebars', exphbs()); // Config express to use handlebars as template engine
 app.set('view engine', 'handlebars');
 
-
 app.use("/",generalController)
-
 app.use(express.static("public"))
 
-// Create Server Application
-const PORT = 3000; 
-app.listen(PORT, ()=>{  // 2 Parameters: PORT, callback function
-    console.log(`Web Server Application is running and listening on port ${PORT}`);
-})
+app.listen(process.env.PORT || port, () => console.log(`App listening at ${port}`));
