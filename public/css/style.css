@@ -1,11 +1,11 @@
-.cover {
+/* .cover {
     height: 100vh;
     background-image: linear-gradient(40deg, rgba(255, 0, 173, 0.7),rgba(21, 0, 255, 0.623)),url(-.jpg);
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
     position: relative;
-}
+} */
 .form-control {
     text-align: center;
     border-radius: 30px;
@@ -14,12 +14,13 @@
     font-size: 140%;
     margin: 1.5% 0%;
 }
-.form-control:hover, .comicTitle:hover {
-    background-color:rgb(46, 0, 90) !important;
+.form-control:hover, #comicTitle:hover{
+    background-color:rgb(46, 0, 90);
+    color: #95d6d2;
     transition: 0.5s;
 }
-.comicBy:hover {
-    color:rgb(38, 0, 73) !important;
+#comicBy:hover,  #comicDate:hover {
+    color:rgb(38, 0, 73) ;
     transition: 0.5s;
 }
 a, p {
@@ -28,16 +29,17 @@ a, p {
 .form-button {
     margin-left: 25%;
     margin-right: 25%;
+    min-width: 107px;
 }
 body {
-    background-image: linear-gradient(130deg, rgba(0, 21, 206, 0.623),rgba(199, 0, 43, 0.514)),url(../img/girl4-crop1.jpg);
+    background-image: linear-gradient(130deg, rgba(0, 21, 206, 0.623),rgba(199, 0, 43, 0.514)),url(#.jpg);
     background-size: cover;
     background-position: center;
     color: #fff !important;
     margin-left: 10%;
     margin-right: 10%;
 }
-.comicTitle
+#comicTitle
 {
     margin-top: 3.5%;
     margin-bottom: 1%;
@@ -54,6 +56,7 @@ body {
     font-size: 120%;
     margin: 2% 0%;
     outline: none;
+    min-width: 70px;
 }
 .search-comic-btn {
     width: 10%;
@@ -63,11 +66,15 @@ body {
     width: 40%;
     padding-bottom: 5px;
 }
+.search-comic-input:hover::placeholder {
+    color: #82afab;
+}
+
 input {
     width: 60%;
 }
 .search-comic:hover {
-    background-color:rgb(46, 0, 90) !important;
+    background-color:rgb(46, 0, 90);
     transition: 0.5s;
     outline: none;
 }
@@ -79,11 +86,15 @@ input {
     margin: 64px 5px;
     float: right;
 }
-a .fa {
+.material-icons {
+    font-size: 200%;
+}
+.fa, .material-icons {
     color: #ccc;
     font-size: 20px;
+    cursor: pointer;
 }
-a .fa:hover {
+.fa:hover, .material-icons:hover {
     color: #14fff3;
     font-size: 20px;
 }
@@ -106,7 +117,11 @@ a .fa:hover {
     bottom: 1.5%;
     left: 1%;
 }
-.light-mover {
+img {
+    max-width: 100%;
+}
+#light-mover {
+    display: none;
     width: 13px;
     height: 300px;
     margin-top: 450px;

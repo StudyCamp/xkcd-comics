@@ -4,8 +4,8 @@
             <div class="row">
             
                 <div class="col-sm-12 text text-center">
-                    <p class="comicTitle">"{{ comic.title}}"</p> 
-                    <p class="comicBy">- XKCD </p>
+                    <p id="comicTitle">"{{ comic.title}}"</p> 
+                    <p id="comicBy">- XKCD </p>
                     
                     <form class="form-button" action="/" method="post">
                         <a href="/id/{{ add comic.num 1 }}"><p class="form-control">Next</p></a>
@@ -15,7 +15,7 @@
   
                     <img src={{ comic.img }} alt={{ comic.alt }} class="responsive">                     
                     
-                    <p>{{ comic.month }}/{{ comic.day }}/{{ comic.year }} </p>
+                    <p id="comicDate">{{ comic.month }}/{{ comic.day }}/{{ comic.year }}</p>
 
                     <form class='text-center'> 
                     
@@ -31,16 +31,17 @@
 
                     <!-- Social icons -->
                     <ul class="list-unstyled social">
-                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li class="active"><a href=""><i class="fa fa-google"></i></a></li>
-                        <li class="active"><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <span class="material-icons-outlined">flashlight_on</span>
+                        <li><i class="fa fa-pinterest"></i></a></li>
+                        <li><i class="fa fa-instagram"></i></a></li>
+                        <li><i class="fa fa-twitter"></i></a></li>
+                        <li><i class="fa fa-google"></i></a></li>
+                        <li><i class="fa fa-facebook"></i></a></li>
+                        <li><i class="material-icons" id="background-switch">hide_image</i></li>
+                        <li><i class="material-icons" id="light-switch">flashlight_off</i></li>
                     </ul>
                 </div>
                                 
-             <div class="light-mover"></div>
+             <div id="light-mover"></div>
 
             </div>
         </div>
