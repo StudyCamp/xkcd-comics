@@ -1,11 +1,4 @@
-/* .cover {
-    height: 100vh;
-    background-image: linear-gradient(40deg, rgba(255, 0, 173, 0.7),rgba(21, 0, 255, 0.623)),url(-.jpg);
-    background-position: center;
-    background-size: cover;
-    overflow-x: hidden;
-    position: relative;
-} */
+
 .form-control {
     text-align: center;
     border-radius: 30px;
@@ -16,7 +9,6 @@
 }
 .form-control:hover, #comicTitle:hover{
     background-color:rgb(46, 0, 90);
-    color: #95d6d2;
     transition: 0.5s;
 }
 #comicBy:hover,  #comicDate:hover {
@@ -91,12 +83,12 @@ input {
 }
 .fa, .material-icons {
     color: #ccc;
-    font-size: 20px;
+    font-size: 170%;
     cursor: pointer;
 }
 .fa:hover, .material-icons:hover {
-    color: #14fff3;
-    font-size: 20px;
+    color: #60fff7;
+    font-size: 170%;
 }
 .responsive {
     object-fit: cover;
@@ -110,15 +102,17 @@ input {
     border-color: #73fdff;
     transition: 0.25s;
 }
-.social-icons {
-    font-size: large;
-    cursor: pointer;
-    position: absolute;
-    bottom: 1.5%;
-    left: 1%;
+.social {
+    margin-right: 11%;
 }
 img {
     max-width: 100%;
+    min-height: 300px;
+}
+img:hover {
+    -moz-box-shadow:    0px 0px 1px 2px #ddd;
+    -webkit-box-shadow: 0px 0px 1px 2px #ccc;
+    box-shadow:         0px 0px 1px 2px #ccc; 
 }
 #light-mover {
     display: none;
