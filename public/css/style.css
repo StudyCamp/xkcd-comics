@@ -1,0 +1,150 @@
+
+.form-control {
+    text-align: center;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #9ad4d0;
+    font-size: 140%;
+    margin: 1.5% 0%;
+}
+.form-control:hover, #comicTitle:hover{
+    background-color:rgb(46, 0, 90);
+    transition: 0.5s;
+}
+#comicBy:hover,  #comicDate:hover {
+    color:rgb(38, 0, 73) ;
+    transition: 0.5s;
+}
+a, p {
+    text-decoration:none !important;
+}
+.form-button {
+    margin-left: 25%;
+    margin-right: 25%;
+    min-width: 107px;
+}
+body {
+    background-image: linear-gradient(130deg, rgba(0, 21, 206, 0.623),rgba(199, 0, 43, 0.514)),url(#.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff !important;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#comicTitle
+{
+    margin-top: 3.5%;
+    margin-bottom: 1%;
+    letter-spacing: 5px;
+    font-weight: 645;
+    font-size: 130%;
+}
+
+.search-comic {
+    text-align: center;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #9ad4d0;
+    font-size: 120%;
+    margin: 2% 0%;
+    outline: none;
+    min-width: 70px;
+}
+.search-comic-btn {
+    width: 10%;
+    padding-bottom: 5px;
+}
+.search-comic-input {
+    width: 40%;
+    padding-bottom: 5px;
+}
+.search-comic-input:hover::placeholder {
+    color: #82afab;
+}
+
+input {
+    width: 60%;
+}
+.search-comic:hover {
+    background-color:rgb(46, 0, 90);
+    transition: 0.5s;
+    outline: none;
+}
+
+.social {
+    margin: 0px 1.8em;
+}
+.social li {
+    margin: 64px 5px;
+    float: right;
+}
+.material-icons {
+    font-size: 200%;
+}
+.fa, .material-icons {
+    color: #ccc;
+    font-size: 170%;
+    cursor: pointer;
+}
+.fa:hover, .material-icons:hover {
+    color: #60fff7;
+    font-size: 170%;
+}
+.responsive {
+    object-fit: cover;
+    width: auto;
+}
+.btn {
+    font-weight: 650;
+}
+.btn-outline-dark:hover {
+    background-color: #73fdff;
+    border-color: #73fdff;
+    transition: 0.25s;
+}
+.social {
+    margin-right: 11%;
+}
+img {
+    max-width: 100%;
+    min-height: 300px;
+}
+img:hover {
+    -moz-box-shadow:    0px 0px 1px 2px #ddd;
+    -webkit-box-shadow: 0px 0px 1px 2px #ccc;
+    box-shadow:         0px 0px 1px 2px #ccc; 
+}
+#light-mover {
+    display: none;
+    width: 13px;
+    height: 300px;
+    margin-top: 450px;
+    background: transparent;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 40px 5px rgb(168, 227, 255),
+        inset 0 0 20px rgb(194, 208, 255),
+        inset 0 0 20px rgb(152, 255, 186);
+    animation: run 6s linear infinite;
+}
+@keyframes run {
+    0% {
+        left: 3%;
+        opacity: 0;;
+    }
+    30% {
+        left: 3%;
+        opacity: 1;;
+    }
+    90% {
+        left: 90%;
+        opacity: 1;
+    }
+    100% {
+        left: 97%;
+        opacity: 0;
+    }
+}

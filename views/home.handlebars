@@ -1,25 +1,47 @@
-<section id='home-section'>
-  <h2>{{ comic.title }}</h2>
-
-</section>
-
-Title: {{ comic.title }} <br>
-<img src={{ comic.img }} alt={{ comic.alt }}> <br>
-Month: {{ comic.month }} <br>
-Day: {{ comic.day }} <br>
-ID: {{ comic.num }} <br>
-Date: {{ comic.month }} / {{ comic.day }} /{{ comic.year }}
-<br>
-<a href="/id/{{ minus comic.num 1 }}">
-  <button type="submit">Back</button>
-</a>
-<br>
-<a href="/id/{{ random 1 2473 }}">
-  <button type="submit">Random</button>
-</a>
-<br>
-<a href="/id/{{ add comic.num 1 }}">
-  <button type="submit">Next</button>
-</a>
 
 
+     <div class="container">
+            <div class="row">
+            
+                <div class="col-sm-12 text text-center">
+                    <p id="comicTitle">"{{ comic.title}}"</p> 
+                    <p id="comicBy">- XKCD </p>
+                    
+                    <form class="form-button" action="/" method="post">
+                        <a href="/id/{{ add comic.num 1 }}"><p class="form-control">Next</p></a>
+                        <a href="/id/{{ minus comic.num 1 }}"><p class="form-control">Back</p></a>
+                        <a href="/id/{{ random 1 2473 }}"><p class="form-control">Random</p></a>
+                    </form>
+  
+                    <img src={{ comic.img }} alt={{ comic.alt }} class="responsive">                     
+                    
+                    <p id="comicDate">{{ comic.month }}/{{ comic.day }}/{{ comic.year }}</p>
+
+                    <form class='text-center' action="/" method="post"> 
+                    
+                        <input class="search-comic search-comic-input" autocomplete="off" placeholder="Comic ID" required>
+                        <button class="search-comic search-comic-btn">Search</button>      
+                      
+                    </form>
+
+                        <button type="submit" class="btn btn-outline-dark">XKCD Subscription </button>
+                        <a class="btn btn-outline-light" href="/login">Buy dev a coffee</a>
+
+
+                    <!-- Social icons -->
+                    <ul class="list-unstyled social">
+                        <li><a href="https://www.facebook.com/TheXKCD/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.pinterest.ca/goatmips/xkcd/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="https://www.instagram.com/xkcd/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/TheXKCD/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://leonli.herokuapp.com/" target="_blank"><i class="material-icons">assignment_ind</i></a></li>
+                        <li><a href="https://www.facebook.com/TheXKCD/" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><i class="material-icons" id="background-switch" target="_blank">hide_image</i></li>
+                        <li><i class="material-icons" id="light-switch" target="_blank">flashlight_off</i></li>
+                    </ul>
+                </div>
+                                
+             <div id="light-mover"></div>
+
+            </div>
+        </div>
