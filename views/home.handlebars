@@ -16,9 +16,13 @@
             <img src={{ comic.img }} alt={{ comic.alt }} class="responsiveImg">                    
             <p id="comicDate">{{ comic.month }}/{{ comic.day }}/{{ comic.year }}</p>
 
-            {{!-- Search form --}}
+            {{!-- Search form, allow only numbers --}}
             <form class='text-center' action="/search" method="POST"> 
-                <input class="search-comic search-comic-input" name="comicId"autocomplete="off" placeholder="Comic ID" required>
+                <input class="search-comic search-comic-input" 
+                    oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                    name="comicId" 
+                    autocomplete="off" 
+                    placeholder="Comic ID" required>
                 <button class="search-comic search-comic-btn" type="submit">Search</button>      
             </form>
 
@@ -32,9 +36,9 @@
                 <li><a href="https://www.facebook.com/TheXKCD/" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://www.pinterest.ca/goatmips/xkcd/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
                 <li><a href="https://www.instagram.com/xkcd/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/TheXKCD/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://twitter.com/xkcdcomic/" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://leonli.herokuapp.com/" target="_blank"><i class="material-icons">assignment_ind</i></a></li>
-                <li><a href="https://github.com/StudyCamp/xkcd-comics" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/StudyCamp/xkcd-comics/" target="_blank"><i class="fa fa-github"></i></a></li>
                 <li><i class="material-icons" id="background-switch" target="_blank">image</i></li>
                 <li><i class="material-icons" id="light-switch" target="_blank">flashlight_off</i></li>
             </ul>
@@ -59,6 +63,11 @@
                       <i class="fa fa-instagram"></i>
                       <i class="fa fa-pinterest"></i>
                       <i class="fa fa-facebook"></i>
+                    </div>
+                    {{!-- Preview images --}}
+                    <div class="modalPic">
+                        <img src="../img/BG-off-modalPic.jpeg">                    
+                        <img src="../img/BG-on-modalPic.jpeg">                  
                     </div>
                 </div>
                 <div class="modal-footer">

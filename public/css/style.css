@@ -159,3 +159,10 @@ img:hover {
 .modal-body > i, .modal-body > div >i {
     color: black;
 }
+.modalPic {
+    text-align: center;
+    margin-top: 1%;
+}
+.modalPic > img{
+    margin-bottom: 1%;
+}
