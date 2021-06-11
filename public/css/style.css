@@ -1,4 +1,3 @@
-
 .form-control {
     text-align: center;
     border-radius: 30px;
@@ -12,8 +11,9 @@
     transition: 0.5s;
 }
 #comicBy:hover,  #comicDate:hover {
-    color:rgb(38, 0, 73) ;
-    transition: 0.5s;
+    font-size: 125%;
+    color:rgb(211, 235, 78);
+    transition: 0.4s;
 }
 a, p {
     text-decoration:none !important;
@@ -54,9 +54,10 @@ body {
     outline: none;
     min-width: 70px;
 }
-.search-comic-btn {
+.search-comic-btn, .search-comic-btn:focus {
     width: 10%;
     padding-bottom: 5px;
+    outline: none;
 }
 .search-comic-input {
     width: 40%;
@@ -74,10 +75,6 @@ input {
     transition: 0.5s;
     outline: none;
 }
-
-.social {
-    margin: 0px 1.8em;
-}
 .social li {
     margin: 64px 5px;
     float: right;
@@ -87,27 +84,32 @@ input {
 }
 .fa, .material-icons {
     color: rgb(226, 226, 226);
-    font-size: 170%;
+    font-size: 165%;
     cursor: pointer;
 }
 .fa:hover, .material-icons:hover {
     color: #60fff7;
-    font-size: 170%;
+    font-size: 167%;
 }
-.responsive {
+.responsiveImg {
     object-fit: cover;
     width: auto;
 }
 .btn {
     font-weight: 650;
 }
+.btn-outline-dark {
+    color: rgb(8, 0, 43);
+    border-color: rgb(6, 0, 32);
+    font-weight: 900;
+}
 .btn-outline-dark:hover {
     background-color: #73fdff;
     border-color: #73fdff;
     transition: 0.25s;
 }
-.social {
-    margin-right: 11%;
+.btn-outline-light:hover {
+    color: rgb(21, 8, 83);
 }
 img {
     max-width: 100%;
@@ -150,4 +152,10 @@ img:hover {
         left: 97%;
         opacity: 0;
     }
+}
+.modal {
+    color: black;
+}
+.modal-body > i, .modal-body > div >i {
+    color: black;
 }
