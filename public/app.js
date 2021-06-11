@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     backgroundSwitch();
 });
 
+randomizedComicRoute = () => `/id/${Math.floor(Math.random() * 2473) + 1}`;
+
 function lightSwitch() {
     const lightSwitch = document.querySelector("#light-switch");
     const lightMover = document.querySelector("#light-mover");
@@ -17,8 +19,6 @@ function lightSwitch() {
         } 
     }       
 };
-
-
 function backgroundSwitch() {
     const hasImage = "linear-gradient(130deg, rgba(0, 21, 206, 0.623),rgba(199, 0, 43, 0.514)), url('../img/girl4-crop1.jpg')";
     const noImage =  "url('[INSERT HTTPS IMAGE URL HERE]'), linear-gradient(130deg, rgba(0, 21, 206, 0.623),rgba(199, 0, 43, 0.514))";
@@ -30,7 +30,6 @@ function backgroundSwitch() {
         } else {
             backgroundSwitch.textContent = "image";
             document.body.style.backgroundImage = hasImage;
-
         } 
     }       
 };
