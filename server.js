@@ -9,6 +9,9 @@ const app = express();
 app.engine('handlebars', exphbs()); // Config express to use handlebars as template engine
 app.set('view engine', 'handlebars');
 
+app.use(express.json());
+app.use(express.urlencoded({extended: true})); 
+
 app.use("/",generalController)
 app.use(express.static("public"))
 
