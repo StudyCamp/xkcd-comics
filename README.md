@@ -2,7 +2,7 @@
 
 ### Welcome to XKCD Comics!  
 
-This is an mobile responsive ExpressJS application that allows users to browse through XKCD comics.
+This is a mobile responsive ExpressJS application that allows users to browse through XKCD comics.
 
 ### Instructions  
 
