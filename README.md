@@ -2,11 +2,11 @@
 
 ### Welcome to XKCD Comics!  
 
-This is an mobile responsive ExpressJS App that allows users to browse through XKCD comics.
+This is an mobile responsive ExpressJS application that allows users to browse through XKCD comics.
 
 ### Instructions  
 
-Start off with a random comic. Click next, back or random for different comics. Search for a comic by comic ID. Then you may upload, share, and search for images and user profiles. Enjoy!   
+Start off with a random comic. Click next, back or random for different comics. Search for a comic by comic ID. Then try out the flashlight and background toggle features. If you like it, hit the subscription and the buy-dev-a-coffee buttons. Don't forget explore the icon links at the bottom of the page.
 
 ### XKCD Comics App  
 
