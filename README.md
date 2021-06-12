@@ -6,7 +6,7 @@ This is an mobile responsive ExpressJS application that allows users to browse t
 
 ### Instructions  
 
-Start off with a random comic. Click next, back or random for different comics. Search for a comic by comic ID. Then try out the flashlight and background toggle features. If you like it, hit the subscription and the buy-dev-a-coffee buttons. Don't forget explore the icon links at the bottom of the page.
+Start off with a random comic. Click next, back, or random for different comics. Search for a comic by comic ID. Then try out the flashlight and background toggle features. If you like it, hit the subscription and the buy-dev-a-coffee buttons. Don't forget explore the icon links at the bottom of the page.
 
 ### XKCD Comics App  
 
