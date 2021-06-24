@@ -23,6 +23,7 @@ router.post("/search", (req,res) => {
     const comicId = req.body.comicId;
     res.redirect(`/id/${comicId}`)
 })
+
 // Get the comic by ID, randomize if ID is out of range/invalid
 router.get("/id/:comicId", async (req, res) =>{ 
     const id = req.params.comicId
