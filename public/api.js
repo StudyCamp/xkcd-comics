@@ -3,9 +3,9 @@ const fetch = require('node-fetch');
 // Fetch specific comics
 async function loadComics(comicId) {
     apiUrl = 'https://xkcd.com';
-    comicId = comicId;
+    comicId = comicId ? '/' + comicId : ''
     apiUrlFormat = 'info.0.json';
-    requestUrl = `${apiUrl}/${comicId}/${apiUrlFormat}`;
+    requestUrl = `${apiUrl}${comicId}/${apiUrlFormat}`;
 
     let fetched_data;
     await fetch(requestUrl)
